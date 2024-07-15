@@ -14,7 +14,7 @@ class Mapel extends CI_Controller
   {
     $data = array(
       'title' => 'SMAN 1 Bekasi',
-      'title2' => 'Mata Pelajaran',
+      'title2' => '<i class="fa fa-book fa-fw"></i> Mata Pelajaran',
       'mapel' => $this->m_mapel->lists(),
       'isi' => 'admin/v_mapel'
     );

@@ -16,15 +16,15 @@
         <a href="<?= base_url('admin') ?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
       </li>
       <li>
-        <a href="<?= base_url('mapel') ?>"><i class="fa fa-table fa-fw"></i> Mata Pelajaran</a>
+        <a href="<?= base_url('mapel') ?>"><i class="fa fa-book fa-fw"></i> Mata Pelajaran</a>
 
         <!-- /.nav-second-level -->
       </li>
       <li>
-        <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+        <a href="<?= base_url('guru') ?>"><i class="fa fa-users fa-fw"></i> Guru</a>
       </li>
       <li>
-        <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+        <a href="<?= base_url('siswa') ?>"><i class="fa fa-fw fa-graduation-cap"></i> Siswa</a>
       </li>
       <li>
         <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>

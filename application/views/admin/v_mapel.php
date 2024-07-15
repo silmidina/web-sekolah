@@ -28,15 +28,14 @@
               <td width="20px"><?= $no++; ?></td>
               <td><?= $value->nama_mapel; ?></td>
               <td>
-                <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#edit<?= $value->id_mapel ?>"><i class="fa fa-pencil"></i> Edit</button>
-                <a href="<?= base_url('mapel/delete/' . $value->id_mapel) ?>" onclick="return confirm('Apakah Data Ini Akan Dihapus...?' )" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#edit<?= $value->id_mapel ?>"><i class="fa fa-pencil"></i></button>
+                <a href="<?= base_url('mapel/delete/' . $value->id_mapel) ?>" onclick="return confirm('Apakah Data Ini Akan Dihapus...?' )" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
               </td>
             </tr>
           <?php  } ?>
         </tbody>
       </table>
     </div>
-
   </div>
 </div>
 
