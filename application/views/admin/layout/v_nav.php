@@ -33,7 +33,7 @@
             <a href="<?= base_url('pengumuman') ?>"><i class="fa fa-fw fa-bullhorn"></i> Pengumuman</a>
           </li>
           <li>
-            <a href="<?= base_url('berita') ?>"><i class="fa fa-fw fa-file"></i> Berita</a>
+            <a href="<?= base_url('berita') ?>"><i class="fa fa-fw fa-newspaper-o"></i> Berita</a>
           </li>
           <li>
             <a href="notifications.html">Notifications</a>

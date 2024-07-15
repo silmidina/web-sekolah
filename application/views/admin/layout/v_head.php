@@ -33,4 +33,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+  /* ckeditor */
+  <script src="<?= base_url() ?>ckeditor/ckeditor.js"></script>
+  <script src="<?= base_url() ?>ckeditor/samples/js/sample.js"></script>
+  <link rel="stylesheet" href="<?= base_url() ?>ckeditor/samples/css/samples.css">
+  <link rel="stylesheet" href="<?= base_url() ?>ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css">
+  /* End ckeditor */
 </head>

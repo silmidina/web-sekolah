@@ -34,7 +34,9 @@
     });
   });
 </script>
-
+<script>
+  initSample();
+</script>
 </body>
 
 </html>
