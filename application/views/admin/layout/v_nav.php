@@ -36,7 +36,7 @@
             <a href="<?= base_url('berita') ?>"><i class="fa fa-fw fa-newspaper-o"></i> Berita</a>
           </li>
           <li>
-            <a href="notifications.html">Notifications</a>
+            <a href="<?= base_url('gallery') ?>"><i class="fa fa-fw fa-picture-o"></i> Gallery</a>
           </li>
           <li>
             <a href="typography.html">Typography</a>
