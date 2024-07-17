@@ -39,7 +39,7 @@
             <a href="<?= base_url('gallery') ?>"><i class="fa fa-fw fa-picture-o"></i> Gallery</a>
           </li>
           <li>
-            <a href="typography.html">Typography</a>
+            <a href="<?= base_url('download') ?>"><i class="fa fa-fw fa-download"></i> Download</a>
           </li>
           <li>
             <a href="icons.html"> Icons</a>
