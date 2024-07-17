@@ -5,13 +5,13 @@
        <div class="col">
          <div class="header_content d-flex flex-row align-items-center justify-content-start">
            <div class="logo_container">
-             <a href="#">
+             <a href="<?= base_url('home') ?>">
                <div class="logo_text">SMAN 1<span> Bekasi</span></div>
              </a>
            </div>
            <nav class="main_nav_contaner ml-auto">
              <ul class="main_nav">
-               <li class="active"><a href="#">Home</a></li>
+               <li class="active"><a href="<?= base_url('home') ?>">Home</a></li>
 
                <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -19,7 +19,7 @@
                  </a>
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                    <a class="dropdown-item" href="#">Visi Misi</a>
-                   <a class="dropdown-item" href="#">Guru</a>
+                   <a class="dropdown-item" href="<?= base_url('home/guru') ?>">Guru</a>
                    <a class="dropdown-item" href="#">Siswa</a>
                    <div class="dropdown-divider"></div>
                    <a class="dropdown-item" href="#">Something else here</a>
@@ -27,8 +27,8 @@
                </li>
                <li><a href="about.html">About</a></li>
                <li><a href="courses.html">Galleri</a></li>
-               <li><a href="blog.html">Download</a></li>
-               <li><a href="#">Berita</a></li>
+               <li><a href="<?= base_url('home/download') ?>">Download</a></li>
+               <li><a href="<?= base_url('home/berita') ?>">Berita</a></li>
                <li><a href="contact.html">Contact</a></li>
              </ul>
 

@@ -86,7 +86,7 @@ class Download extends CI_Controller
       } else {
         //Menghapus file lama
         $download = $this->m_download->detail($id_file);
-        if ($download->_file != "") {
+        if ($download->file != "") {
           unlink('assets/file/' . $download->file);
         }
         //End menghapus file lama
@@ -105,6 +105,7 @@ class Download extends CI_Controller
         $this->session->set_flashdata('pesan', 'Data Berhasil Diedit');
         redirect('download');
       }
+       //end menghapus foto
       $data = array(
         'id_file' => $id_file,
         'ket_file' => $this->input->post('ket_file'),
@@ -127,7 +128,7 @@ class Download extends CI_Controller
   {
     //Menghapus file lama
     $download = $this->m_download->detail($id_file);
-    if ($download->_file != "") {
+    if ($download->file != "") {
       unlink('assets/file/' . $download->file);
     }
     //End menghapus file lama

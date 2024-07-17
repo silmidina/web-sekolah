@@ -103,6 +103,7 @@ class Berita extends CI_Controller
           'id_berita' => $id_berita,
           'judul_berita' => $this->input->post('judul_berita'),
           'slug_berita' => url_title($this->input->post('judul_berita'), 'dash', TRUE),
+          'tgl_berita' => date('Y-m-d'),
           'isi_berita' => $this->input->post('isi_berita'),
           'id_user' => $this->session->userdata('id_user'),
           'gambar_berita' => $upload_data['uploads']['file_name']
@@ -111,10 +112,12 @@ class Berita extends CI_Controller
         $this->session->set_flashdata('pesan', 'Data Berhasil Diedit');
         redirect('berita');
       }
+      //end menghapus foto
       $data = array(
         'id_berita' => $id_berita,
         'judul_berita' => $this->input->post('judul_berita'),
         'slug_berita' => url_title($this->input->post('judul_berita'), 'dash', TRUE),
+        'tgl_berita' => date('Y-m-d'),
         'isi_berita' => $this->input->post('isi_berita'),
         'id_user' => $this->session->userdata('id_user'),
       );

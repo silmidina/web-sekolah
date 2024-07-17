@@ -101,6 +101,7 @@ class Gallery extends CI_Controller
         $this->session->set_flashdata('pesan', 'Gallery Berhasil Disimpan');
         redirect('gallery');
       }
+      //end menghapus foto
       $data = array(
         'id_gallery' => $id_gallery,
         'nama_gallery' => $this->input->post('nama_gallery'),

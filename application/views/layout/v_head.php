@@ -12,8 +12,18 @@
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/plugins/OwlCarousel2-2.2.1/animate.css">
+
+  <link href="<?= base_url() ?>template/front-end/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/courses.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/courses_responsive.css">
+
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/main_styles.css">
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/responsive.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/contact.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/contact_responsive.css">
+
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/datatable/DataTables/datatables.min.css">
+
 
 
 </head>
