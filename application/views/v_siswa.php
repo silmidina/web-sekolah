@@ -15,48 +15,41 @@
   </div>
 </div>
 
-<div class="contact">
-  <div class=""><br><br>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>Download Area</h2> <br>
-        </div>
 
-        <div class="col-lg-12">
-          <table class="table table-bordered" id="myTable">
-            <thead>
-              <tr>
-                <th class="text-center" width="50px">No</th>
-                <th class="text-center">Keterangan File</th>
-                <th class="text-center" width="100px">Download</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php $no = 1;
-              foreach ($download as $key => $value) { ?>
-                <tr>
-                  <td class="text-center"><?= $no++ ?></td>
-                  <td><?= $value->ket_file ?></td>
-                  <td class="text-center">
-                    <a href="<?= base_url('assets/file/' . $value->file); ?>" class="btn btn-primary btn-sm" download>
-                      <i class="fa fa-fw fa-download"></i>
-                    </a>
-                  </td>
-                </tr>
-              <?php  } ?>
-            </tbody>
-          </table>
+<div class="team_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url() ?>template/front-end/images/team_background.jpg" data-speed="0.8"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2>Daftar Siswa</h2> <br>
+    </div>
+
+
+
+
+    <!-- Team Item -->
+    <?php foreach ($siswa as $key => $value) { ?>
+
+      <div class="col-lg-3 col-md-6 team_col">
+        <div class="team_item">
+          <div class="team_image"><img src="<?= base_url('assets/foto_siswa/' . $value->foto_siswa) ?>" width="250px" height="190px"></div>
+          <div class="team_body">
+            <div class="team_title"><a href="#"><?= $value->nama_siswa ?></a></div>
+            <div class="team_subtitle"><?= $value->nis ?></div>
+            <div class="team_subtitle"><?= $value->tempat_lahir ?>, <?= $value->tgl_lahir ?></div>
+            <div class="team_subtitle"><?= $value->kelas ?></div>
+            <div class="social_list">
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+    <?php } ?>
+
   </div>
 </div>
-
-
-
-
-
+</div>
+</div>
 
 
 <!-- Newsletter -->

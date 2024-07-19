@@ -41,45 +41,14 @@
           <li>
             <a href="<?= base_url('download') ?>"><i class="fa fa-fw fa-download"></i> Download</a>
           </li>
-          <li>
-            <a href="icons.html"> Icons</a>
-          </li>
-          <li>
-            <a href="grid.html">Grid</a>
-          </li>
+
         </ul>
-        <!-- /.nav-second-level -->
-      </li>
       <li>
-        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level">
-          <li>
-            <a href="#">Second Level Item</a>
-          </li>
-          <li>
-            <a href="#">Second Level Item</a>
-          </li>
-          <li>
-            <a href="#">Third Level <span class="fa arrow"></span></a>
-            <ul class="nav nav-third-level">
-              <li>
-                <a href="#">Third Level Item</a>
-              </li>
-              <li>
-                <a href="#">Third Level Item</a>
-              </li>
-              <li>
-                <a href="#">Third Level Item</a>
-              </li>
-              <li>
-                <a href="#">Third Level Item</a>
-              </li>
-            </ul>
-            <!-- /.nav-third-level -->
-          </li>
-        </ul>
-        <!-- /.nav-second-level -->
+        <a href="<?= base_url('setting') ?>"><i class="fa fa-fw fa-gear"></i> Setting</a>
       </li>
+      <!-- /.nav-second-level -->
+      </li>
+
       <li class="active">
         <a href="<?= base_url('login/logout') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
 

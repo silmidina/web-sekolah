@@ -18,6 +18,14 @@ class M_mapel extends CI_Model
     $this->db->insert('tbl_mapel', $data);
   }
 
+  public function detail($id_mapel)
+  {
+    $this->db->select('*');
+    $this->db->from('tbl_mapel');
+    $this->db->where('id_mapel', $id_mapel);
+    return $this->db->get()->row();
+  }
+
   public function edit($data)
   {
     $this->db->where('id_mapel', $data['id_mapel']);

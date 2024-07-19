@@ -15,64 +15,44 @@
   </div>
 </div>
 
+<!-- Blog -->
 
-<!-- Courses -->
-
-<div class="courses">
+<div class="blog">
   <div class="container">
     <div class="row">
 
-      <!-- Courses Main Content -->
+      <!-- Blog Content -->
       <div class="col-lg-8">
-        <div class="courses_container">
-          <h2>Berita</h2>
-          <div class="row courses_row">
-
-            <!-- Course -->
-            <?php $no = 1;
-            foreach ($berita as $key => $value) { ?>
-              <div class="col-lg-6 course_col">
-                <div class="course">
-                  <div class="course_image"><img src="<?= base_url('assets/gambar_berita/' . $value->gambar_berita) ?>" height="170px" width="100%"></div>
-                  <div class="course_body">
-                    <h3 class="course_title"><a href="<?= base_url('home/detail_berita/' . $value->slug_berita) ?>"><?= substr(strip_tags($value->judul_berita), 0, 25) ?>...</a></h3>
-                    <div class="course_teacher">User : <?= $value->nama_user ?></div>
-                    <div class="course_text">
-                      <p><?= substr(strip_tags($value->isi_berita), 0, 100) ?>...</p>
-                    </div>
-                  </div>
-                  <div class="course_footer">
-                    <div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
-                      <div class="course_info">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <span><?= $value->tgl_berita ?></span>
-                      </div>
-                      <div class="course_info">
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <?php } ?>
+        <div class="blog_content">
+          <div class="blog_title"><?= $berita->judul_berita ?></div>
+          <div class="blog_meta">
+            <ul>
+              <li>Post on <a href="#"><?= $berita->tgl_berita ?></a></li>
+              <li>By <a href="#"><?= $berita->nama_user ?></a></li>
+            </ul>
           </div>
-
-          <div class="row pagination_row">
-            <div class="col">
-              <?php
-              if (isset($paginasi)) {
-                echo $paginasi;
-              }
-              ?>
+          <div class="blog_image"><img src="<?= base_url('assets/gambar_berita/' . $berita->gambar_berita) ?>" alt=""></div>
+          <p><?= $berita->isi_berita ?></p>
+          <div class="blog_images">
+            <div class="row">
+              <div class="col-lg-6 blog_images_col">
+                <div class="blog_image_small"><img src="images/blog_images_1.jpg" alt=""></div>
+              </div>
+              <div class="col-lg-6 blog_images_col">
+                <div class="blog_image_small"><img src="images/blog_images_2.jpg" alt=""></div>
+              </div>
             </div>
           </div>
+
         </div>
+
+
       </div>
 
-      <!-- Courses Sidebar -->
+      <!-- Blog Sidebar -->
       <div class="col-lg-4">
         <div class="sidebar">
+
 
 
           <!-- Latest Course -->
@@ -100,6 +80,31 @@
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Newsletter -->
 <div class="newsletter">
   <div class="newsletter_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url() ?>template/front-end/images/newsletter.jpg" data-speed="0.8"></div>
@@ -121,7 +126,6 @@
               <button type="submit" class="newsletter_button">subscribe</button>
             </form>
           </div>
-
         </div>
       </div>
     </div>

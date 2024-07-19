@@ -1,5 +1,7 @@
 <body>
-
+  <?php
+  $setting = $this->m_setting->detail();
+  ?>
   <div class="super_container">
 
     <!-- Header -->
@@ -19,11 +21,15 @@
                     </li>
                     <li>
                       <i class="fa fa-phone" aria-hidden="true"></i>
-                      <div>001-1234-88888</div>
+                      <div><?= $setting->no_telpon ?></div>
                     </li>
                     <li>
                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                      <div>info.deercreative@gmail.com</div>
+                      <div><?= $setting->email ?></div>
+                    </li>
+                    <li>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div><?= $setting->alamat ?></div>
                     </li>
                   </ul>
                   <div class="top_bar_login ml-auto">

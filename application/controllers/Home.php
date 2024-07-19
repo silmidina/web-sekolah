@@ -8,6 +8,7 @@ class Home extends CI_Controller
   {
     parent::__construct();
     $this->load->model('m_home');
+    $this->load->model('m_guru');
     $this->load->helper('download'); // Pastikan helper download dimuat
   }
 
@@ -15,9 +16,11 @@ class Home extends CI_Controller
   {
     $data = array(
       'title' => 'Web Sekolah',
+      'berita' => $this->m_home->slider_berita(),
+      'guru' => $this->m_guru->lists(),
       'isi' => 'v_home'
     );
-    $this->load->view('layout/v_wrapper', $data, FALSE);
+    $this->load->view('layout/v_wrapperhome', $data, FALSE);
   }
 
   public function download()
@@ -85,9 +88,72 @@ class Home extends CI_Controller
 
     $data = array(
       'paginasi' => $this->pagination->create_links(),
+      'latest_berita' => $this->m_home->latest_berita(),
       'title' => 'Berita',
       'berita' => $this->m_home->berita($limit, $start),
       'isi' => 'v_berita'
+    );
+    $this->load->view('layout/v_wrapper', $data, FALSE);
+  }
+
+  public function detail_berita($slug_berita)
+  {
+    $data = array(
+      'title' => 'Detail Berita',
+      'berita' => $this->m_home->detail_berita($slug_berita),
+      'latest_berita' => $this->m_home->latest_berita(),
+      'isi' => 'v_detail_berita'
+    );
+    $this->load->view('layout/v_wrapper', $data, FALSE);
+  }
+
+  public function gallery()
+  {
+    $data = array(
+      'title' => 'Gallery Foto',
+      'gallery' => $this->m_home->gallery(),
+      'isi' => 'v_gallery'
+    );
+    $this->load->view('layout/v_wrapper', $data, FALSE);
+  }
+
+  public function detail_gallery($id_gallery)
+  {
+    $data = array(
+      'title' => 'Detail Gallery Foto',
+      'gallery' => $this->m_home->detail_gallery($id_gallery),
+      'nama_gallery' => $this->m_home->nama_gallery($id_gallery),
+      'isi' => 'v_detail_gallery'
+    );
+    $this->load->view('layout/v_wrapper', $data, FALSE);
+  }
+
+  public function siswa()
+  {
+    $data = array(
+      'title' => 'Siswa',
+      'siswa' => $this->m_home->siswa(),
+      'isi' => 'v_siswa'
+    );
+    $this->load->view('layout/v_wrapper', $data, FALSE);
+  }
+
+  public function profile()
+  {
+    $data = array(
+      'title' => 'Profile Sekolah',
+      'sekolah' => $this->m_setting->detail(),
+      'isi' => 'v_profile'
+    );
+    $this->load->view('layout/v_wrapper', $data, FALSE);
+  }
+
+  public function about()
+  {
+    $data = array(
+      'title' => 'About Sekolah',
+      'sekolah' => $this->m_setting->detail(),
+      'isi' => 'v_about'
     );
     $this->load->view('layout/v_wrapper', $data, FALSE);
   }

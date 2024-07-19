@@ -24,6 +24,13 @@
 
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/datatable/DataTables/datatables.min.css">
 
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/blog_single.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/blog_single_responsive.css">
 
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/about.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/front-end/styles/about_responsive.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 </head>

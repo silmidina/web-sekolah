@@ -15,46 +15,62 @@
   </div>
 </div>
 
+<!-- Isi Konten -->
+<div class="contact_info_container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <img src="<?= base_url('assets/foto_kepsek/' . $sekolah->foto_kepsek) ?>" width="200px" height="200px">
+        <br>
+        <h4><?= $sekolah->kepala_sekolah ?></h4>
+        <h4>NIP : <?= $sekolah->nip ?></h4>
 
-<div class="team_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url() ?>template/front-end/images/team_background.jpg" data-speed="0.8"></div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h2>Guru Sekolah</h2> <br>
-    </div>
+      </div>
 
+      <div class="col-sm-8">
+        <div class="form-group">
+          <div class="form_title">Nama Sekolah</div>
+          <input class="comment_input" value="<?= $sekolah->nama_sekolah ?>" type="text" name="nama_sekolah" readonly>
+        </div>
 
+        <div class="form-group">
+          <div class="form_title">Alamat Sekolah</div>
+          <textarea class="comment_input" name="alamat" id="" cols="5" rows="5" readonly><?= $sekolah->alamat ?></textarea>
+        </div>
 
-
-    <!-- Team Item -->
-    <?php foreach ($guru as $key => $value) { ?>
-
-      <div class="col-lg-3 col-md-6 team_col">
-        <div class="team_item">
-          <div class="team_image"><img src="<?= base_url('assets/foto_guru/' . $value->foto_guru) ?>" width="250px" height="190px"></div>
-          <div class="team_body">
-            <div class="team_title"><a href="#"><?= $value->nama_guru ?></a></div>
-            <div class="team_subtitle"><?= $value->nip ?>, <?= $value->pendidikan ?></div>
-            <div class="team_subtitle"><?= $value->tempat_lahir ?>, <?= $value->tgl_lahir ?></div>
-            <div class="team_subtitle"><?= $value->nama_mapel ?></div>
-            <div class="social_list">
-              <ul>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="form-group">
+          <div class="form_title">No Telepon</div>
+          <input class="comment_input" value="<?= $sekolah->no_telpon ?>" type="text" name="no_telpon" readonly>
         </div>
       </div>
 
-    <?php } ?>
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="form_title">
+            <h4>Sejarah Sekolah</h4>
+          </div>
+          <p><?= $sekolah->sejarah ?></p>
+        </div>
 
+        <div class="form-group">
+          <div class="form_title">
+            <h4>Visi</h4>
+          </div>
+          <p><?= $sekolah->visi ?></p>
+        </div>
+
+        <div class="form-group">
+          <div class="form_title">
+            <h4>Misi</h4>
+          </div>
+          <p><?= $sekolah->misi ?></p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-</div>
 
+<!-- End Isi Konten -->
 
 <!-- Newsletter -->
 <div class="newsletter">

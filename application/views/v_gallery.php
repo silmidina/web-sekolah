@@ -15,45 +15,39 @@
   </div>
 </div>
 
-<div class="contact">
-  <div class=""><br><br>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>Download Area</h2> <br>
-        </div>
+<!-- About -->
 
-        <div class="col-lg-12">
-          <table class="table table-bordered" id="myTable">
-            <thead>
-              <tr>
-                <th class="text-center" width="50px">No</th>
-                <th class="text-center">Keterangan File</th>
-                <th class="text-center" width="100px">Download</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php $no = 1;
-              foreach ($download as $key => $value) { ?>
-                <tr>
-                  <td class="text-center"><?= $no++ ?></td>
-                  <td><?= $value->ket_file ?></td>
-                  <td class="text-center">
-                    <a href="<?= base_url('assets/file/' . $value->file); ?>" class="btn btn-primary btn-sm" download>
-                      <i class="fa fa-fw fa-download"></i>
-                    </a>
-                  </td>
-                </tr>
-              <?php  } ?>
-            </tbody>
-          </table>
+<div class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="section_title_container text-center">
+          <h2 class="section_title">Welcome To <?= $title ?></h2>
+          <div class="section_subtitle">
+
+          </div>
         </div>
       </div>
     </div>
+    <div class="row about_row">
+
+      <?php foreach ($gallery as $key => $value) { ?>
+        <!-- About Item -->
+        <div class="col-lg-4 about_col about_col_left">
+          <div class="about_item">
+            <div class="about_item_image"><img src="<?= base_url('assets/sampul/' . $value->sampul) ?>" width="150px" height="150px"></div>
+            <div class="about_item_title"><a href="<?= base_url('home/detail_gallery/' . $value->id_gallery) ?>"><?= $value->nama_gallery ?></a></div>
+            <div class="about_item_text">
+              Jumlah : <?= $value->jml_foto ?> Foto
+            </div>
+          </div>
+        </div>
+      <?php  } ?>
+
+
+    </div>
   </div>
 </div>
-
-
 
 
 

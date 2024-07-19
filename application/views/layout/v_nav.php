@@ -6,7 +6,7 @@
          <div class="header_content d-flex flex-row align-items-center justify-content-start">
            <div class="logo_container">
              <a href="<?= base_url('home') ?>">
-               <div class="logo_text">SMAN 1<span> Bekasi</span></div>
+               <div class="logo_text"><span> <?= $setting->nama_sekolah ?></span></div>
              </a>
            </div>
            <nav class="main_nav_contaner ml-auto">
@@ -18,15 +18,12 @@
                    Sekolah
                  </a>
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="#">Visi Misi</a>
+                   <a class="dropdown-item" href="<?= base_url('home/profile') ?>"> Profile</a>
                    <a class="dropdown-item" href="<?= base_url('home/guru') ?>">Guru</a>
-                   <a class="dropdown-item" href="#">Siswa</a>
-                   <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="#">Something else here</a>
-                 </div>
+                   <a class="dropdown-item" href="<?= base_url('home/siswa') ?>">Siswa</a>
                </li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="courses.html">Galleri</a></li>
+               <li><a href="<?= base_url('home/about') ?>">About</a></li>
+               <li><a href="<?= base_url('home/gallery') ?>">Gallery</a></li>
                <li><a href="<?= base_url('home/download') ?>">Download</a></li>
                <li><a href="<?= base_url('home/berita') ?>">Berita</a></li>
                <li><a href="contact.html">Contact</a></li>
